@@ -38,6 +38,7 @@ for comment in comments:
                         comment.body=comment.body.split("\n")
                         print("replying to {0}'s (catfact) comment: {1}".format(author.name, comment.body))
                         s1 = (s1['fact'])
+                        s1 = str(s1)
                         pinda = ("""Here is random catfact for you /u/{0}. {1}
 ___
 ^^Hello, ^^I'm ^^a ^^bot ^^and ^^this ^^action ^^was ^^performed ^^automatically ^^for ^^questions ^^pm ^^me.""".format(author.name, s1)) 
