@@ -37,6 +37,7 @@ for comment in comments:
                     if comment.subreddit not in ["depression","suicidewatch","pcmasterrace"]:
                         comment.body=comment.body.split("\n")
                         print("replying to {0}'s (catfact) comment: {1}".format(author.name, comment.body))
+                        s1 = (requests.get('https://catfact.ninja/fact').json())
                         s1 = (s1['fact'])
                         s1 = str(s1)
                         pinda = ("""Here is random catfact for you /u/{0}. {1}
